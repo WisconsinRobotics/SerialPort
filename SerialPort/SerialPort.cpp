@@ -35,7 +35,7 @@ System::Boolean SerialPort::Open()
         0,
         0,
         OPEN_EXISTING,
-        FILE_FLAG_WRITE_THROUGH,
+        FILE_FLAG_WRITE_THROUGH | FILE_FLAG_NO_BUFFERING,
         0
     );
 
